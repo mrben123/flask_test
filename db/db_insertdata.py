@@ -1,9 +1,9 @@
 import mysql.connector
 
-sql = "INSERT INTO docxs (DocxName, Attribution, Town, Industry, MainProduct, RiskPoints, Product, Area, Productivity) VALUES (%s ,%s, %s ,%s, %s ,%s, %s ,%s, %s )" 
+_sql = "INSERT INTO docxs (DocxName, Attribution, Town, Industry, MainProduct, RiskPoints, Product, Area, Productivity) VALUES (%s ,%s, %s ,%s, %s ,%s, %s ,%s, %s )" 
 
 
-def main(data):
+def insert_data(data,sql):
     mysql_connection = mysql.connector.connect(
         user="root",
         password="gloomy528!@#",

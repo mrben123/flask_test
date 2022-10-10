@@ -289,6 +289,7 @@ def go(url):
 
     print("start...")
     file = os.listdir(url)
+    print(file)
     for f in file:
         file_path = path.join ("./local/trash/docxs/" , f)
         if file_path.endswith(".docx"):
