@@ -7,4 +7,4 @@ mysql_connection = mysql.connector.connect(
 )
 
 cursor = mysql_connection.cursor()
-cursor.execute("CREATE DATABASE javascripts")
+# cursor.execute("CREATE DATABASE javascripts")

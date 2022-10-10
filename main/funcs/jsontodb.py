@@ -249,6 +249,7 @@ def write_list_to_json(data, json_path):
 
 def do_one_file(file_path):
     try:
+        print('123321')
         # file = "乡镇分配试剂-泰安.docx"
         file_name = os.path.basename(file_path).split('.')[0]
         if file_name.startswith("~$"):
@@ -279,19 +280,21 @@ def do_one_file(file_path):
         write_list_to_json(data_list2, path_dir + file_name + "_2.json")
         write_list_to_json(data_list3, path_dir + file_name + "_3.json")
     except Exception as e:
+        print('!!!!')
         print(e)
 
 
-def main():
+def go(url):
     from os import path
 
     print("start...")
-    file = os.listdir("../trash")
+    file = os.listdir(url)
     for f in file:
-        file_path = path.join ("./" , f)
+        file_path = path.join ("./local/trash/docxs/" , f)
         if file_path.endswith(".docx"):
             do_one_file(file_path)
 
     print("finish...")
-if __name__ == '__main__':
-    main()
+
+    return url
+

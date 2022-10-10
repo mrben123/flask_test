@@ -1,12 +1,12 @@
+from ast import arg
 import numpy as np
 import pandas as pd
 import json
 
 import sys
-sys.path.append(r'F:\code\flask_test\class')
-sys.path.append(r'F:\code\flask_test\funcs\connectdb')
+sys.path.append(r'F:\code\flask_test\main\class')
+sys.path.append(r'F:\code\flask_test\main\funcs\connectdb')
 from Q import Q
-import db_insertdata as W
 
 word = Q(1,2)
 word.toCsv()
@@ -28,3 +28,11 @@ def main():
         print(pd.DataFrame(load_data).iloc[[100,101,105]])
 
 main()
+
+# def make_thing(*args):
+#     x,y,z = args
+#     return dict(**locals())
+
+# t = make_thing(1,{"name":"ben"},['a','c','d'])
+
+# print(t)
