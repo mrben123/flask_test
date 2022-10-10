@@ -8,8 +8,7 @@ trash/
 outputs/
 *.docx
 *.json
-
-mysql/local
+local/
 
 # C extensions
 *.so

@@ -3,6 +3,7 @@ import re
 import json
 import os
 
+
 from docx.document import Document
 from docx.oxml.table import CT_Tbl
 from docx.oxml.text.paragraph import CT_P
