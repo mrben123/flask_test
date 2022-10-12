@@ -7,4 +7,4 @@ mysql_connection = mysql.connector.connect(
         database="pythondb"
     )
 
-print('connect to db with role of root...\n')
+print('Connect to db successfully with role of root...\n')

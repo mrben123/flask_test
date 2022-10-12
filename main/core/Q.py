@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import json
 
-sys.path.append(r'F:\code\flask_test\main\funcs')
+sys.path.append(r'F:\code\flask_test\main\apps')
 from jsontodb import go
 
 class Q(object):
@@ -17,7 +17,37 @@ class Q(object):
         self.a = a
         self.b = b
         
+    def _read(self,_file,_type):
+        #读取文件
+        if(_type == 1):
+            pass
+        if(_type == 2):
+            pass
+        if(_type == 3):
+            pass
+        if(_type == 4):
+            pass
+        return
     
+    def _export(self,_dir,_type):
+        #导出文件
+        if(_type == 1):
+            pass
+        if(_type == 2):
+            pass
+        if(_type == 3):
+            pass
+        if(_type == 4):
+            pass
+        return
+
+    def _excute_sql(self,_sql):
+        #执行sql语句、入数据库
+
+        #调用一下封装过的db，connect
+        #传入sql给db实例
+        pass
+            
     def connect_sql(self):
         print("准备链接数据库：》》》")
         # self.mysql_connection = mysql.connector.connect(
