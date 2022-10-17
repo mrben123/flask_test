@@ -6,7 +6,7 @@ import json
 import sys
 sys.path.append(r'F:\code\flask_test\main\class')
 sys.path.append(r'F:\code\flask_test\main\funcs\connectdb')
-from main.core.Q import Q
+from Q import Q
 
 word = Q(1,2)
 word.toCsv()
